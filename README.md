@@ -1,2 +1,2 @@
-# Graph-BFS
-Implemantation of BFS using Graph data structure in Java
+# Graph-DFS
+Implemantation of DFS using Graph data structure in Java
