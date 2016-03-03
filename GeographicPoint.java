@@ -1,3 +1,4 @@
+
 import java.awt.geom.Point2D.Double;
 
 public class GeographicPoint extends Double {

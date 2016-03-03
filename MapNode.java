@@ -1,7 +1,3 @@
-/**
- * 
- */
-package roadgraph;
 
 import java.util.List;
 
