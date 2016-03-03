@@ -73,7 +73,7 @@ public class MapGraph {
 			}
 	}
 
-	public List<GeographicPoint> bfs(GeographicPoint start, 
+	public List<GeographicPoint> dfs(GeographicPoint start, 
 			 					     GeographicPoint goal)
 	{
 		if(start.equals(goal)){
@@ -88,7 +88,7 @@ public class MapGraph {
 			for(MapEdge neighbor : current.getNeighbor()){
 				GeographicPoint next = neighbor.getEnd();
 				if(! visited.contains(next))
-					path = bfs(next, goal);
+					path = dfs(next, goal);
 				if(path.contains(goal)){
 					return path;
 				}
@@ -102,7 +102,7 @@ public class MapGraph {
 	
 	public static void main(String[] args)
 	{
-		System.out.print("Create or import a new map in MapGraph object. Call bfs method with source and destination vertex");
+		System.out.print("Create or import a new map in MapGraph object. Call dfs method with source and destination vertex");
 	}
 	
 }
